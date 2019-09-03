@@ -1,64 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Meu primeiro template">
-  <meta name="author" content="Alan">
-  <meta name="generator" content="Jekyll v3.8.5">
-  <title>Meu site · Cover page</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
+  <title>Formulários</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="cover.css" rel="stylesheet">
+  <link href="public/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="text-center">
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">costafacchini</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">Saiba mais</a>
-        <a class="nav-link" href="#">Contato</a>
-      </nav>
-    </div>
-  </header>
+<body>
+  <div class="container">
+    <h1>Formulários</h1>
+    <form>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>Digite o nome do usuário</label>
+            <input type="text" class="form-control form-control-lg" name="usuario" placeholder="Insira um texto aqui">
+          </div>
+        </div>
 
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">Minha página pessoal</h1>
-    <p class="lead">Meu nome é Alan e eu sou um programador full-stack</p>
-    <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Saiba mais</a>
-    </p>
-  </main>
+        <div class="col">
+          <div class="form-group">
+            <label>Digite a senha</label>
+            <input type="text" class="form-control form-control-lg" name="senha" placeholder="Digite a senha">
+          </div>
+        </div>
+      </div>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+
+        <input type="range" class="form-control-range">
+
+        <input type="checkbox" class="form-check-input">
+        <label>Clique aqui</label>
+
+        <input type="file" class="form-control" name="">
+      </div>
+      <input type="submit" class="btn btn-secondary btn-lg" value="Enviar" name="enviar">
+    </form>
+  </div>
+
+  <footer>
+    <!--JS    -->
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
   </footer>
-</div>
 </body>
 </html>
