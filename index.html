@@ -11,18 +11,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>Popover</h1>
+    <h1>Tooltips</h1>
     <!--  Direita  -->
-    <button class="btn btn-primary" title="Título" data-toogle="popover" data-content="Aqui é conteúdo do meu popover e o restante é enrolação para ocupar bastante espaço">Meu popover</button>
+    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="right">Meu tooltip</button>
 
     <!--  Topo  -->
-    <button class="btn btn-primary" data-toogle="popover" data-content="Aqui é conteúdo do meu popover" data-placement="top">Meu popover</button>
+    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="top">Meu tooltip</button>
 
     <!--  Baixo  -->
-    <button class="btn btn-primary" data-toogle="popover" data-content="Aqui é conteúdo do meu popover" data-placement="bottom">Meu popover</button>
+    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="bottom">Meu tooltip</button>
 
     <!--  Esquerda  -->
-    <button class="btn btn-primary" data-toogle="popover" data-content="Aqui é conteúdo do meu popover" data-placement="left">Meu popover</button>
+    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="left">Meu tooltip</button>
   </div>
 
   <footer>
@@ -31,7 +31,7 @@
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script>
       $(function() {
-        $('[data-toogle="popover"]').popover()
+        $('[data-toogle="tooltip"]').tooltip()
       });
     </script>
   </footer>
