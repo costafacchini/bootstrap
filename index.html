@@ -13,14 +13,15 @@
   <div class="container">
     <h1>Modal</h1>
 
-    <button class="btn btn-secondary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
+    <button class="btn btn-secondary" data-nome="Alan" data-toggle="modal" data-target="#conteudoModal">Modal 1</button>
+    <button class="btn btn-secondary" data-nome="Moacir" data-toggle="modal" data-target="#conteudoModal">Modal 2</button>
 
     <div id="conteudoModal" class="modal fade">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog">
         <div class="modal-content">
 
           <div class="modal-header">
-            <h4>Meu modal</h4>
+            <h4 class="modal-title">Meu modal</h4>
             <button class="close" data-dismiss="modal" arial-label="Fechar">
               <span arial-hidden="true">&times;</span>
             </button>
@@ -28,14 +29,20 @@
 
           <div class="modal-body">
             <div class="row">
-              <div class="col-4" style="background-color: red">
-                Texto do meu modal parte 1
+              <div class="col-4">
+                <span>Destinatário: </span>
               </div>
-              <div class="col-4" style="background-color: blue">
-                Texto do meu modal parte 2
+              <div class="col-8">
+                <input type="text" name="para" class="form-control">
               </div>
-              <div class="col-4" style="background-color: green">
-                Texto do meu modal parte 3
+            </div>
+            <br><br>
+            <div class="row">
+              <div class="col-4">
+                <span>Mensagem: </span>
+              </div>
+              <div class="col-8">
+                <textarea class="form-control"></textarea>
               </div>
             </div>
           </div>
@@ -54,8 +61,12 @@
     <script src="public/js/jquery.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script>
-      $(function() {
-        $('[data-toogle="tooltip"]').tooltip()
+      $('#conteudoModal').on('show.bs.modal', function(event) {
+        var button = $(event.relatedTarget);
+        var recipient = button.data('nome');
+        var modal = $(this);
+        modal.find('modal-title').text('Mensagem para ' + recipient);
+        modal.find('.modal-body input').val(recipient);
       });
     </script>
   </footer>
