@@ -11,18 +11,32 @@
 </head>
 <body>
   <div class="container">
-    <h1>Tooltips</h1>
-    <!--  Direita  -->
-    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="right">Meu tooltip</button>
+    <h1>Modal</h1>
 
-    <!--  Topo  -->
-    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="top">Meu tooltip</button>
+    <button class="btn btn-secondary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
 
-    <!--  Baixo  -->
-    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="bottom">Meu tooltip</button>
+    <div id="conteudoModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
-    <!--  Esquerda  -->
-    <button class="btn btn-success" data-toogle="tooltip" title="Meu primeiro tooltip" data-placement="left">Meu tooltip</button>
+          <div class="modal-header">
+            <h4>Meu modal</h4>
+            <button class="close" data-dismiss="modal" arial-label="Fechar">
+              <span arial-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Texto do meu modal
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <footer>
