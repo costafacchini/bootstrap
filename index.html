@@ -11,12 +11,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Collapse</h1>
+    <h1>Scrollspy</h1>
 
-    <a class="btn btn-warning" data-toggle="collapse" href="#secreto" data-target="#secreto">Mostre mais</a>
+    <div class="row">
+      <div class="col-4">
+        <div id="livro" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#c1">Capítulo 1</a>
+          <a class="list-group-item list-group-item-action" href="#c2">Capítulo 2</a>
+          <a class="list-group-item list-group-item-action" href="#c3">Capítulo 3</a>
+          <a class="list-group-item list-group-item-action" href="#c4">Capítulo 4</a>
+          <a class="list-group-item list-group-item-action" href="#c5">Capítulo 5</a>
+        </div>
+      </div>
 
-    <div class="collapse" id="secreto">
-      Mensagem secreta.
+      <div class="col-8" id="caixaLivro" style="position: relative; height: 500px; overflow: auto">
+        <div data-spy="scroll" data-target="#livro" data-offset="0">
+          <h3 id="c1">Capítulo 1</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+
+          <h3 id="c2">Capítulo 2</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+
+          <h3 id="c3">Capítulo 3</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+
+          <h3 id="c4">Capítulo 4</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+
+          <h3 id="c5">Capítulo 5</h3>
+          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -26,13 +51,7 @@
     <script src="public/js/jquery.js"></script>
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script>
-      $('#conteudoModal').on('show.bs.modal', function(event) {
-        var button = $(event.relatedTarget);
-        var recipient = button.data('nome');
-        var modal = $(this);
-        modal.find('modal-title').text('Mensagem para ' + recipient);
-        modal.find('.modal-body input').val(recipient);
-      });
+      $('#caixaLivro').scrollspy({ target: '#livro' })
     </script>
   </footer>
 </body>
