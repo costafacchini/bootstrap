@@ -2,72 +2,68 @@
 <html lang="pt-br">
 
 <head>
-  <title>Componentes</title>
-  <meta charset="UTF-8">
-
-  <!-- CSS -->
-  <link href="public/css/bootstrap.min.css" rel="stylesheet">
+  <!-- declaração do bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .bg-img{
+      padding:120px 0;
+      background-image: url('bg_about.jpg');
+      background-size: cover !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
 
 </head>
 <body>
-  <div class="container" style="background-color: black">
-    <h1>Carousel</h1>
+  <header>
+    <nav class="navbar navbar-dark bg-dark text-light">
+      <a class="navbar-brand">Navbar</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, nisi a luctus venenatis, nisl odio volutpat orci, nec volutpat est erat ac neque. Curabitur molestie dictum arcu. Morbi eget viverra nunc, et tristique ipsum. Curabitur dapibus volutpat facilisis. Cras sed lorem ante. Vestibulum vel est sit amet lacus vulputate dapibus scelerisque eget erat. Vestibulum efficitur dictum lectus sit amet dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a augue nec arcu ultricies bibendum. Proin vitae semper sapien. Curabitur at lectus nunc. Phasellus ullamcorper erat in rutrum molestie. Vivamus ornare ullamcorper est, sit amet fermentum magna tincidunt id.
 
-    <div id="meu_slideshow" class="carousel slide" data-ride="carousel" style="text-align: center">
+      Duis tempus sagittis velit ut condimentum. Aliquam sit amet lobortis tortor. Praesent lobortis diam eget est lacinia suscipit. Mauris vitae dolor sit amet ligula venenatis pulvinar. Maecenas a mauris efficitur, euismod quam a, congue dui. Sed non est non mi rhoncus ultrices sit amet nec magna. Phasellus sed hendrerit tortor. Etiam aliquam, mi at finibus gravida, lectus justo scelerisque nisi, in blandit neque nibh vitae sem. Praesent rhoncus metus non lorem luctus facilisis. Duis aliquet egestas velit.
 
-      <ol class="carousel-indicators">
-        <li data-target="#meu_slideshow" data-slide-to="0" class="active"></li>
-        <li data-target="#meu_slideshow" data-slide-to="1"></li>
-        <li data-target="#meu_slideshow" data-slide-to="2"></li>
-      </ol>
+      Vestibulum nec rutrum mauris. Ut at pulvinar magna. In hac habitasse platea dictumst. Etiam porta et mauris sed posuere. Morbi purus nulla, volutpat at nisl et, dapibus pulvinar arcu. Praesent sed augue semper, rutrum nisl id, ultricies felis. Donec finibus, odio eget semper finibus, magna tortor lacinia massa, id ullamcorper metus nunc vel justo. Ut nec volutpat est. Aliquam nunc tellus, pulvinar et aliquam eu, scelerisque rhoncus ligula. Duis quis neque elementum, ultricies felis ac, lacinia nisl. Praesent sagittis, nunc tempus ullamcorper pharetra, tellus nisl elementum ligula, vitae consequat lorem risus ut metus. Donec eget laoreet mauris. Mauris sollicitudin leo ut enim rhoncus, nec suscipit nisi dictum.
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="public/img/natureza1.jpg" alt="Imagem de um rio e de uma ponte sobre um rio" style="max-height: 500px">
+      Aenean vel elit commodo lacus condimentum auctor eget vitae augue. Etiam id tempor massa. Donec vel rutrum justo. In non metus dolor. Pellentesque et pellentesque risus. In eget quam quis metus hendrerit feugiat. Fusce varius justo ut congue mattis. Donec efficitur rutrum ipsum, quis pulvinar quam consequat quis. Mauris congue felis erat, et euismod nulla laoreet convallis. Nulla facilisi. Nullam aliquam malesuada turpis, ut sollicitudin sem convallis et. Maecenas vitae facilisis nulla. Ut sit amet placerat tellus, eget elementum erat. Fusce mattis finibus nunc, vel dictum odio pellentesque at.
 
-          <div class="carousel-caption" d-none d-md-block>
-            <h5>Natureza 1</h5>
-            <p>Ponte sobre o rio</p>
-          </div>
-        </div>
+      Nullam posuere et mi consequat tincidunt. Vivamus mattis eget neque id interdum. Nullam augue ex, pharetra ac interdum quis, feugiat ac ante. Vestibulum et odio id ligula sodales egestas eget a dolor. Nullam luctus vitae est in elementum. Cras tortor eros, ullamcorper non velit vitae, pellentesque iaculis lectus. Sed ullamcorper urna at tortor tempus, eu vestibulum ex eleifend. Proin tristique felis at ex sollicitudin, sed auctor mauris pretium.
 
-        <div class="carousel-item">
-          <img src="public/img/natureza2.jpg" alt="Floresta no outono" style="max-height: 500px">
+    </p>
+  </header>
 
-          <div class="carousel-caption" d-none d-md-block>
-            <h5>Natureza 2</h5>
-            <p>Tarde de Outono</p>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="public/img/natureza3.jpg" alt="Nascer do sol" style="max-height: 500px">
-
-          <div class="carousel-caption" d-none d-md-block>
-            <h5>Natureza 3</h5>
-            <p>Nascer do sol</p>
-          </div>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#meu_slideshow" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-
-      <a class="carousel-control-next" href="#meu_slideshow" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="sr-only">Posterior</span>
-      </a>
-    </div>
-
+  <div class="bg-img text-center text-light">
+    <h1>Bem-vindo a meu site</h1>
   </div>
 
-  <footer>
-    <!--JS    -->
-    <script src="public/js/jquery.js"></script>
-    <script src="public/js/bootstrap.bundle.min.js"></script>
-  </footer>
+
+  <div class="container text-center">
+    <br><br><br>
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br>All you get is this text and a mostly barebones HTML document.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, nisi a luctus venenatis, nisl odio volutpat orci, nec volutpat est erat ac neque. Curabitur molestie dictum arcu. Morbi eget viverra nunc, et tristique ipsum. Curabitur dapibus volutpat facilisis. Cras sed lorem ante. Vestibulum vel est sit amet lacus vulputate dapibus scelerisque eget erat. Vestibulum efficitur dictum lectus sit amet dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a augue nec arcu ultricies bibendum. Proin vitae semper sapien. Curabitur at lectus nunc. Phasellus ullamcorper erat in rutrum molestie. Vivamus ornare ullamcorper est, sit amet fermentum magna tincidunt id.
+
+      Duis tempus sagittis velit ut condimentum. Aliquam sit amet lobortis tortor. Praesent lobortis diam eget est lacinia suscipit. Mauris vitae dolor sit amet ligula venenatis pulvinar. Maecenas a mauris efficitur, euismod quam a, congue dui. Sed non est non mi rhoncus ultrices sit amet nec magna. Phasellus sed hendrerit tortor. Etiam aliquam, mi at finibus gravida, lectus justo scelerisque nisi, in blandit neque nibh vitae sem. Praesent rhoncus metus non lorem luctus facilisis. Duis aliquet egestas velit.
+
+      Vestibulum nec rutrum mauris. Ut at pulvinar magna. In hac habitasse platea dictumst. Etiam porta et mauris sed posuere. Morbi purus nulla, volutpat at nisl et, dapibus pulvinar arcu. Praesent sed augue semper, rutrum nisl id, ultricies felis. Donec finibus, odio eget semper finibus, magna tortor lacinia massa, id ullamcorper metus nunc vel justo. Ut nec volutpat est. Aliquam nunc tellus, pulvinar et aliquam eu, scelerisque rhoncus ligula. Duis quis neque elementum, ultricies felis ac, lacinia nisl. Praesent sagittis, nunc tempus ullamcorper pharetra, tellus nisl elementum ligula, vitae consequat lorem risus ut metus. Donec eget laoreet mauris. Mauris sollicitudin leo ut enim rhoncus, nec suscipit nisi dictum.
+
+      Aenean vel elit commodo lacus condimentum auctor eget vitae augue. Etiam id tempor massa. Donec vel rutrum justo. In non metus dolor. Pellentesque et pellentesque risus. In eget quam quis metus hendrerit feugiat. Fusce varius justo ut congue mattis. Donec efficitur rutrum ipsum, quis pulvinar quam consequat quis. Mauris congue felis erat, et euismod nulla laoreet convallis. Nulla facilisi. Nullam aliquam malesuada turpis, ut sollicitudin sem convallis et. Maecenas vitae facilisis nulla. Ut sit amet placerat tellus, eget elementum erat. Fusce mattis finibus nunc, vel dictum odio pellentesque at.
+
+      Nullam posuere et mi consequat tincidunt. Vivamus mattis eget neque id interdum. Nullam augue ex, pharetra ac interdum quis, feugiat ac ante. Vestibulum et odio id ligula sodales egestas eget a dolor. Nullam luctus vitae est in elementum. Cras tortor eros, ullamcorper non velit vitae, pellentesque iaculis lectus. Sed ullamcorper urna at tortor tempus, eu vestibulum ex eleifend. Proin tristique felis at ex sollicitudin, sed auctor mauris pretium.
+
+    </p>
+  </div>
+
+  <!-- boostrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
