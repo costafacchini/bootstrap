@@ -2,68 +2,63 @@
 <html lang="pt-br">
 
 <head>
-  <!-- declaração do bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <style>
-    .bg-img{
-      padding:120px 0;
-      background-image: url('bg_about.jpg');
-      background-size: cover !important;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-  </style>
+  <title>Componentes</title>
+  <meta charset="UTF-8">
+
+  <!--  CSS  -->
+  <link href="public/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-dark bg-dark text-light">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-      </form>
-    </nav>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, nisi a luctus venenatis, nisl odio volutpat orci, nec volutpat est erat ac neque. Curabitur molestie dictum arcu. Morbi eget viverra nunc, et tristique ipsum. Curabitur dapibus volutpat facilisis. Cras sed lorem ante. Vestibulum vel est sit amet lacus vulputate dapibus scelerisque eget erat. Vestibulum efficitur dictum lectus sit amet dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a augue nec arcu ultricies bibendum. Proin vitae semper sapien. Curabitur at lectus nunc. Phasellus ullamcorper erat in rutrum molestie. Vivamus ornare ullamcorper est, sit amet fermentum magna tincidunt id.
+  <nav class="navbar navbar-expand-lg bg-danger navbar-light">
+    <a href="#" class="navbar-brand">LOGO</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      Duis tempus sagittis velit ut condimentum. Aliquam sit amet lobortis tortor. Praesent lobortis diam eget est lacinia suscipit. Mauris vitae dolor sit amet ligula venenatis pulvinar. Maecenas a mauris efficitur, euismod quam a, congue dui. Sed non est non mi rhoncus ultrices sit amet nec magna. Phasellus sed hendrerit tortor. Etiam aliquam, mi at finibus gravida, lectus justo scelerisque nisi, in blandit neque nibh vitae sem. Praesent rhoncus metus non lorem luctus facilisis. Duis aliquet egestas velit.
+    <!--  LINKS  -->
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
 
-      Vestibulum nec rutrum mauris. Ut at pulvinar magna. In hac habitasse platea dictumst. Etiam porta et mauris sed posuere. Morbi purus nulla, volutpat at nisl et, dapibus pulvinar arcu. Praesent sed augue semper, rutrum nisl id, ultricies felis. Donec finibus, odio eget semper finibus, magna tortor lacinia massa, id ullamcorper metus nunc vel justo. Ut nec volutpat est. Aliquam nunc tellus, pulvinar et aliquam eu, scelerisque rhoncus ligula. Duis quis neque elementum, ultricies felis ac, lacinia nisl. Praesent sagittis, nunc tempus ullamcorper pharetra, tellus nisl elementum ligula, vitae consequat lorem risus ut metus. Donec eget laoreet mauris. Mauris sollicitudin leo ut enim rhoncus, nec suscipit nisi dictum.
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quem somos</a>
+        </li>
 
-      Aenean vel elit commodo lacus condimentum auctor eget vitae augue. Etiam id tempor massa. Donec vel rutrum justo. In non metus dolor. Pellentesque et pellentesque risus. In eget quam quis metus hendrerit feugiat. Fusce varius justo ut congue mattis. Donec efficitur rutrum ipsum, quis pulvinar quam consequat quis. Mauris congue felis erat, et euismod nulla laoreet convallis. Nulla facilisi. Nullam aliquam malesuada turpis, ut sollicitudin sem convallis et. Maecenas vitae facilisis nulla. Ut sit amet placerat tellus, eget elementum erat. Fusce mattis finibus nunc, vel dictum odio pellentesque at.
+        <li class="nav-item">
+          <a class="nav-link" href="#">Serviços</a>
+        </li>
 
-      Nullam posuere et mi consequat tincidunt. Vivamus mattis eget neque id interdum. Nullam augue ex, pharetra ac interdum quis, feugiat ac ante. Vestibulum et odio id ligula sodales egestas eget a dolor. Nullam luctus vitae est in elementum. Cras tortor eros, ullamcorper non velit vitae, pellentesque iaculis lectus. Sed ullamcorper urna at tortor tempus, eu vestibulum ex eleifend. Proin tristique felis at ex sollicitudin, sed auctor mauris pretium.
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu_dropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Sites</a>
 
-    </p>
-  </header>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Site 1</a>
+            <a href="#" class="dropdown-item">Site 2</a>
+          </div>
+        </li>
 
-  <div class="bg-img text-center text-light">
-    <h1>Bem-vindo a meu site</h1>
-  </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Fale conosco</a>
+        </li>
 
+        <form class="form-inline">
+          <div class="input-group">
+            <input type="text" placeholder="Buscar" name="buscar" class="form-control input-group-prepend">
+            <input type="submit" class="btn btn-success">
+          </div>
+        </form>
+      </ul>
+    </div>
+  </nav>
 
-  <div class="container text-center">
-    <br><br><br>
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br>All you get is this text and a mostly barebones HTML document.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis, nisi a luctus venenatis, nisl odio volutpat orci, nec volutpat est erat ac neque. Curabitur molestie dictum arcu. Morbi eget viverra nunc, et tristique ipsum. Curabitur dapibus volutpat facilisis. Cras sed lorem ante. Vestibulum vel est sit amet lacus vulputate dapibus scelerisque eget erat. Vestibulum efficitur dictum lectus sit amet dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a augue nec arcu ultricies bibendum. Proin vitae semper sapien. Curabitur at lectus nunc. Phasellus ullamcorper erat in rutrum molestie. Vivamus ornare ullamcorper est, sit amet fermentum magna tincidunt id.
-
-      Duis tempus sagittis velit ut condimentum. Aliquam sit amet lobortis tortor. Praesent lobortis diam eget est lacinia suscipit. Mauris vitae dolor sit amet ligula venenatis pulvinar. Maecenas a mauris efficitur, euismod quam a, congue dui. Sed non est non mi rhoncus ultrices sit amet nec magna. Phasellus sed hendrerit tortor. Etiam aliquam, mi at finibus gravida, lectus justo scelerisque nisi, in blandit neque nibh vitae sem. Praesent rhoncus metus non lorem luctus facilisis. Duis aliquet egestas velit.
-
-      Vestibulum nec rutrum mauris. Ut at pulvinar magna. In hac habitasse platea dictumst. Etiam porta et mauris sed posuere. Morbi purus nulla, volutpat at nisl et, dapibus pulvinar arcu. Praesent sed augue semper, rutrum nisl id, ultricies felis. Donec finibus, odio eget semper finibus, magna tortor lacinia massa, id ullamcorper metus nunc vel justo. Ut nec volutpat est. Aliquam nunc tellus, pulvinar et aliquam eu, scelerisque rhoncus ligula. Duis quis neque elementum, ultricies felis ac, lacinia nisl. Praesent sagittis, nunc tempus ullamcorper pharetra, tellus nisl elementum ligula, vitae consequat lorem risus ut metus. Donec eget laoreet mauris. Mauris sollicitudin leo ut enim rhoncus, nec suscipit nisi dictum.
-
-      Aenean vel elit commodo lacus condimentum auctor eget vitae augue. Etiam id tempor massa. Donec vel rutrum justo. In non metus dolor. Pellentesque et pellentesque risus. In eget quam quis metus hendrerit feugiat. Fusce varius justo ut congue mattis. Donec efficitur rutrum ipsum, quis pulvinar quam consequat quis. Mauris congue felis erat, et euismod nulla laoreet convallis. Nulla facilisi. Nullam aliquam malesuada turpis, ut sollicitudin sem convallis et. Maecenas vitae facilisis nulla. Ut sit amet placerat tellus, eget elementum erat. Fusce mattis finibus nunc, vel dictum odio pellentesque at.
-
-      Nullam posuere et mi consequat tincidunt. Vivamus mattis eget neque id interdum. Nullam augue ex, pharetra ac interdum quis, feugiat ac ante. Vestibulum et odio id ligula sodales egestas eget a dolor. Nullam luctus vitae est in elementum. Cras tortor eros, ullamcorper non velit vitae, pellentesque iaculis lectus. Sed ullamcorper urna at tortor tempus, eu vestibulum ex eleifend. Proin tristique felis at ex sollicitudin, sed auctor mauris pretium.
-
-    </p>
-  </div>
-
-  <!-- boostrap javascript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <footer>
+    <!--  JS  -->
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+  </footer>
 </body>
-
 </html>
