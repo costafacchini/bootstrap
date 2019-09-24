@@ -1,1 +1,40 @@
 /* minha folha de estilo particular */
+body {
+    background-color: #000000;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+.sombra {
+    text-shadow: 1px 1px 1px #111
+}
+
+.borda{
+    border-right: 20px solid #000;
+}
+
+#secao_1 {
+    height: 800px;
+    background-color: #000000;
+    background-image: url('../public/img/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.background_rosa {
+    background-color: #D41AE3;
+}
+
+#secao_5 {
+    height: 680px;
+    padding-top: 150px;
+    background-image: url("../public/img/3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+footer {
+    padding: 50px;
+}
